@@ -4,11 +4,7 @@ html {
     font-family: 'Noto Sans', sans-serif;
   }  
 
-h1{text-align:center}
-
   body {
-    margin: 40px auto;
-    padding: 20px 30px 20px 30px;
     border: 5px outset saddlebrown;
     background-color: turquoise; 
     background-image: 
@@ -16,9 +12,18 @@ h1{text-align:center}
       url(https://ethnomir.ru/upload/medialibrary/34a/baobab.jpg) ; 
     background-size: cover;
     width: 3100px;
+    padding: 30px;
     }
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align:center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
 header {
-    height: 100px;
+    height: 0;
     margin-bottom: 20px;
 }
 p.fio{
@@ -35,7 +40,7 @@ ul{
 }
 
 ul.outer{
-    margin: 0;
+    margin: 20px 0 0 0;
 }
 
 li{
@@ -57,11 +62,11 @@ img{
 
 li div{
     border: 1px solid #ccc;
-    padding: 5px 10px;
+    padding: 5px 3px;
     margin: 5px auto;
     border-radius: 5px;
-    width: 50px;
-    height: 105px;
+    width: 70px;
+    height: 110px;
     white-space: normal;
 }
  
@@ -74,8 +79,12 @@ li div{
     transform: rotateY(0);
     transition-duration: 1s
 } 
+
 li div:hover,  li div:hover+ul li div {
     background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
 }
  
+/* li:has(div:hover) ~ li div {
+    background: #d41111; color: #FFF; border: 1px solid #94a0b4;
+} */
 
