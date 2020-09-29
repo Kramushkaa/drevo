@@ -35,7 +35,7 @@ ul{
 }
 
 ul.outer{
-    margin: 0
+    margin: 0;
 }
 
 li{
@@ -65,7 +65,15 @@ li div{
     white-space: normal;
 }
  
- 
+#ya{
+    transform: rotateY(40deg);
+    transition-duration: 1s
+} 
+
+#ya:hover{
+    transform: rotateY(0);
+    transition-duration: 1s
+} 
 li div:hover,  li div:hover+ul li div {
     background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
 }
