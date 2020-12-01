@@ -9,9 +9,12 @@
   </head>
   <!-- <header></header> -->
   <body>
-    <script src="scripts/main.js"></script>
+    <div id="person-info-holder"></div>
+
     <h1>Генеалогическое древо потомков <br /> Крамарева Василия Тимофеевича</div></h1>
     <div class="clearfix"></div>
+
+
     <ul class=outer>
         <li>
             <div><img src="Images/tree.png" alt="derevo">
@@ -346,7 +349,8 @@
                                             </div>
                                             <div class="card-back"><p class=fio> Крамарев Евгений Геннадьевич</p>
                                                 <p class="birthday">18.06.1999</p> 
-                                                </div>
+                                                <button onclick="$dc.loadPerson('Kramushka');">Больше</button>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -450,16 +454,7 @@
         </li>
     </ul>
     <div class="clearfix"></div>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script>
-      // With the above scripts loaded, you can call `tippy()` with a CSS
-      // selector and a `content` prop:
-      tippy('#myButton', {
-        content: 'My tooltip!',
-      });
-    </script>
-
+    <script src="Scripts/script.js"></script>
     <footer>
         Kramushka 2020 &copy;
     </footer>
