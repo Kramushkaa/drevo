@@ -26,7 +26,7 @@ header {
     height: 0;
     margin-bottom: 20px;
 }
-p.fio{
+p.fio, p.birthday{
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
@@ -70,15 +70,39 @@ li div{
     white-space: normal;
 }
  
-#ya{
-    transform: rotateY(40deg);
+.person{
+    padding: 0;
+    transform: rotateY(0);
+    transition-duration: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.person:hover{
+    transform: rotateY(180deg);
     transition-duration: 1s
+}
+.card-front{
+    /* transform: rotateY(0);
+    transition-duration: 1s; */
+    backface-visibility: hidden;
+    margin: 0;
+    position: absolute;
 } 
 
-#ya:hover{
-    transform: rotateY(0);
-    transition-duration: 1s
+.card-front:hover{
+    /* transform: rotateY(180deg);
+    transition-duration: 1s */
 } 
+
+.card-back{
+    transform: rotateY(180deg);
+    transition-duration: 1s;
+    backface-visibility: hidden;
+    margin: 0;
+    position: absolute;
+} 
+
 
 li div:hover,  li div:hover+ul li div {
     background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
