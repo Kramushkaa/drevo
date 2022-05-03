@@ -3,10 +3,10 @@ function makePerson (list,id) {
     let person = `<div> <img src='Images/tree.png' alt = 'drevo'> 
         <p class = 'fio'> ${" " + personData.Birth_family_name || "" + ") "}${personData.Family_name} 
         ${personData.First_name} ${personData.Fathers_name}</p>`;
-    if (personData.children.length > 0) {
+    if (personData.Children.length > 0) {
         person += `<ul>`
-        for (let i = 0; i < personData.children.length; i++) {
-            person += `<li> + ${makePerson (list,personData.children[i])} + </li>`
+        for (let i = 0; i < personData.Children.length; i++) {
+            person += `<li> + ${makePerson (list,personData.Children[i])} + </li>`
         }
         person += `/<ul>`
     }
