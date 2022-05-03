@@ -4,16 +4,16 @@ html {
     font-family: 'Noto Sans', sans-serif;
   }  
 
-  body {
-    border: 5px outset saddlebrown;
-    background-color: turquoise; 
-    background-image: 
-      linear-gradient(rgba(175, 231, 241, 0.24), rgba(175, 231, 241, 0.9)),
-      url(https://ethnomir.ru/upload/medialibrary/34a/baobab.jpg) ; 
-    background-size: cover;
-    width: 3100px;
-    padding: 30px;
-    }
+body {
+border: 5px outset saddlebrown;
+background-color: turquoise; 
+background-image: 
+    linear-gradient(rgba(175, 231, 241, 0.24), rgba(175, 231, 241, 0.9)),
+    url(https://ethnomir.ru/upload/medialibrary/34a/baobab.jpg) ; 
+background-size: cover;
+width: 3100px;
+padding: 30px;
+}
 *{
     box-sizing: border-box;
 }
@@ -87,59 +87,61 @@ button#closer {
     right: -10px;
 }
 
-
-li div{
-    border: 1px solid #ccc;
-    padding: 5px 3px;
+.card-box {
+    padding: 0;
     margin: 5px auto;
+    width: 72px;
+    height: 112px;
+    border: 0;
+    transform-style: preserve-3d;
+}
+
+.person{
+    border: 1px solid #ccc;
+    margin: 0;
     border-radius: 5px;
     width: 70px;
     height: 110px;
-    white-space: normal;
-}
- 
-.person{
     padding: 0;
     transform: rotateY(0);
     transition-duration: 1s;
-    transform-style: preserve-3d;
     position: relative;
+    white-space: normal;
+    transform-style: inherit;
 }
 
-.person:hover{
+li div:hover .person{
     transform: rotateY(180deg);
+    transition-delay:0.5s;
     transition-duration: 1s
 }
 .card-front{
     backface-visibility: hidden;
-    margin: 0;
     border:0;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 } 
 
 .card-back{
     transform: rotateY(180deg);
+    transition-delay:0.5s;
     transition-duration: 1s;
     backface-visibility: hidden;
-    margin: 0;
     border:0;
     position: absolute;
+    top: 5px;
+
 } 
 
-
-li div:hover,  li div:hover+ul li div {
-    color: #000; border: 1px solid #94a0b4;
-}
  
-li div:hover.male,  li div:hover+ul li div.male {
+li div:hover .person.male,  li div:hover+ul li div.male {
     background: #87cbfb
 }
 
-li div:hover.female,  li div:hover+ul li div.female {
+li div:hover .person.female,  li div:hover+ul li div.female {
     background: #fbbb87
 }
 
-/* li:has(div:hover) ~ li div {
-    background: #d41111; color: #FFF; border: 1px solid #94a0b4;
-} */
 
