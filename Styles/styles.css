@@ -26,11 +26,19 @@ header {
     height: 0;
     margin-bottom: 20px;
 }
-p.fio, p.birthday{
+p.fio, p.birthday, p.dates-of-life{
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 8px;
+}
+
+.male {
+    background-color: rgba(100, 152, 243, 0.369); 
+}
+
+.female {
+    background-color: rgba(250, 187, 134, 0.369); 
 }
 
 ul{
@@ -64,12 +72,14 @@ img{
     position: fixed;
     top:10%;
     left: 10%;
-    background-color: gray;
+    background-color: rgba(188, 175, 81, 0.946);
+    z-index: 9999;
 }
 
 #person-info {
     height: 80vh;
     width: 40vw;
+    z-index: 9999;
 }
 button#closer {
     position: absolute;
@@ -118,9 +128,17 @@ li div{
 
 
 li div:hover,  li div:hover+ul li div {
-    background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+    color: #000; border: 1px solid #94a0b4;
 }
  
+li div:hover.male,  li div:hover+ul li div.male {
+    background: #87cbfb
+}
+
+li div:hover.female,  li div:hover+ul li div.female {
+    background: #fbbb87
+}
+
 /* li:has(div:hover) ~ li div {
     background: #d41111; color: #FFF; border: 1px solid #94a0b4;
 } */
