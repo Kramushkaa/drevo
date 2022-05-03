@@ -1,1 +1,23 @@
-{"Number": "1", "Sex": "Male", "Family_name": "��������", "First_name": "�������", "Fathers_name": "����������", "Birth_city": "Null", "Birth_date": "�� 1860", "Death_date": "�� 1920", "Current_City": "������������", "Children": []}
+[
+    {"Number": 1, "Sex": "m", "Family_name": "Крамарев", "First_name": "Василий", 
+        "Fathers_name": "Тимофеевич", "Birth_city": "Бутурлиновка", "Birth_date": "до 1860", "Death_date": "до 1920", 
+        "Current_City": "Бутурлиновка", "Image":"", "Children": [2,3,4,5,6,7]},
+    {"Number": 2, "Sex": "m", "Family_name": "Крамарев", "First_name": "Дмитрий", 
+        "Fathers_name": "Васильевич", "Birth_city": "Бутурлиновка (?)", "Birth_date": "1880", "Death_date": "194?", 
+        "Current_City": "Усмань (?)", "Children": []},
+    {"Number": 3, "Sex": "m", "Family_name": "Крамарев", "First_name": "Роман", 
+        "Fathers_name": "Васильевич", "Birth_city": "Бутурлиновка", "Birth_date": "1886(?)", "Death_date": "1918(?)", 
+        "Current_City": "", "Children": []},
+    {"Number": 4, "Sex": "m", "Family_name": "Крамарев", "First_name": "Сергей", 
+        "Fathers_name": "Васильевич", "Birth_city": "Бутурлиновка", "Birth_date": "24.09.1893", "Death_date": "14.08.1972", 
+        "Current_City": "Антрацит", "Children": []},
+    {"Number": 5, "Sex": "m", "Family_name": "Крамарев", "First_name": "Алексей", 
+        "Fathers_name": "Васильевич", "Birth_city": "Бутурлиновка", "Birth_date": "05.10.1896", "Death_date": "1975(?)", 
+        "Current_City": "Луганск", "Children": []},
+    {"Number": 6, "Sex": "f", "Family_name": "Олексеенко/Алексеенко", "Birth_family_name":"Крамарева", "First_name": "Ольга", 
+        "Fathers_name": "Васильевна", "Birth_city": "Бутурлиновка", "Birth_date": "29.06.1898", "Death_date": "1974(?)", 
+        "Current_City": "Луганск", "Children": []},
+    {"Number": 7, "Sex": "f", "Family_name": "Швачко", "Birth_family_name":"Крамарева", "First_name": "Анна", 
+        "Fathers_name": "Васильевна", "Birth_city": "Бутурлиновка", "Birth_date": "16.10.1900", "Death_date": "??", 
+        "Current_City": "Луганск", "Children": []}
+]
